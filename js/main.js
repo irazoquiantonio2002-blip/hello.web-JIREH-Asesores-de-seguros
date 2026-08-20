@@ -22,6 +22,46 @@
   function revealHero() {
     var title = document.getElementById('hero-heading');
     if (title) title.classList.add('is-revealed');
+    startTypewriter();
+  }
+
+  /* ── Hero title typewriter (cycling word) ────────────────── */
+  function startTypewriter() {
+    var el = document.getElementById('hero-typewriter');
+    if (!el) return;
+    var words = ['te importa', 'amas', 'valoras', 'cuidas'];
+
+    if (reduceMotion) {
+      el.textContent = words[0];
+      return;
+    }
+
+    var wordIndex = 0, charIndex = words[0].length, deleting = false;
+
+    function tick() {
+      var word = words[wordIndex];
+      if (!deleting) {
+        charIndex++;
+        el.textContent = word.slice(0, charIndex);
+        if (charIndex >= word.length) {
+          window.setTimeout(function () { deleting = true; tick(); }, 1700);
+          return;
+        }
+        window.setTimeout(tick, 70);
+      } else {
+        charIndex--;
+        el.textContent = word.slice(0, charIndex);
+        if (charIndex <= 0) {
+          deleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          window.setTimeout(tick, 350);
+          return;
+        }
+        window.setTimeout(tick, 35);
+      }
+    }
+
+    window.setTimeout(function () { deleting = true; tick(); }, 1700);
   }
 
   window.addEventListener('load', hideLoader);
