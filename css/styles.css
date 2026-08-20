@@ -317,6 +317,7 @@ section{ position:relative; padding:120px 0; }
 .hero-title .line{
   display:block; overflow:hidden;
 }
+#hero-typewriter{ color:var(--green); }
 .hero-title .line > span{
   display:inline-block;
   transform:translateY(100%);

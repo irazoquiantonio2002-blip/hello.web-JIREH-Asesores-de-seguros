@@ -44,24 +44,24 @@
         charIndex++;
         el.textContent = word.slice(0, charIndex);
         if (charIndex >= word.length) {
-          window.setTimeout(function () { deleting = true; tick(); }, 1700);
+          window.setTimeout(function () { deleting = true; tick(); }, 2600);
           return;
         }
-        window.setTimeout(tick, 70);
+        window.setTimeout(tick, 100);
       } else {
         charIndex--;
         el.textContent = word.slice(0, charIndex);
         if (charIndex <= 0) {
           deleting = false;
           wordIndex = (wordIndex + 1) % words.length;
-          window.setTimeout(tick, 350);
+          window.setTimeout(tick, 500);
           return;
         }
-        window.setTimeout(tick, 35);
+        window.setTimeout(tick, 50);
       }
     }
 
-    window.setTimeout(function () { deleting = true; tick(); }, 1700);
+    window.setTimeout(function () { deleting = true; tick(); }, 2600);
   }
 
   window.addEventListener('load', hideLoader);
