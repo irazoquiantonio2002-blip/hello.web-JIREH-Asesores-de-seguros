@@ -68,7 +68,7 @@
         </nav>
 
         <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
-          Cotizar Ahora
+          Cotiza ahora
         </a>
 
         <button class="hamburger" id="hamburger"
@@ -85,7 +85,7 @@
       <a href="#producto">Tu Asesor</a>
       <a href="#proceso">Proceso</a>
       <a href="#contacto">Contacto</a>
-      <a href="#contacto">Cotizar Ahora →</a>
+      <a href="#contacto">Cotiza ahora →</a>
     </div>
   </header>
 
@@ -94,74 +94,57 @@
   ══════════════════════════════════════════════════════ -->
   <main>
     <section id="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
 
-      <!-- Parallax background image (fixed) -->
-      <div class="hero-bg" aria-hidden="true"></div>
-      <!-- Dark overlays -->
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="hero-vignette" aria-hidden="true"></div>
-      <!-- Grid texture -->
-      <div class="hero-grid" aria-hidden="true"></div>
-      <!-- Canvas particle orbs -->
-      <canvas id="hero-canvas" aria-hidden="true"></canvas>
-
-      <!-- Light shafts -->
-      <div class="hero-rays" aria-hidden="true">
-        <div class="hero-ray r1"></div>
-        <div class="hero-ray r2"></div>
-        <div class="hero-ray r3"></div>
-        <div class="hero-ray r4"></div>
-        <div class="hero-ray r5"></div>
-      </div>
-      <!-- Film grain overlay -->
-      <div class="hero-grain" aria-hidden="true"></div>
-      <!-- One-shot scan reveal -->
-      <div class="hero-scanline" aria-hidden="true"></div>
-
-      <div class="container">
         <div class="hero-content">
 
-          <!-- Trust badges row -->
-          <div class="hero-badges" aria-label="Compromisos JIREH">
-            <span><i class="fa-solid fa-handshake-angle"></i>Atención Cercana</span>
-            <span class="hb-sep" aria-hidden="true"></span>
-            <span><i class="fa-solid fa-building-columns"></i>Mejores Aseguradoras</span>
-            <span class="hb-sep" aria-hidden="true"></span>
-            <span><i class="fa-solid fa-sliders"></i>Planes Flexibles</span>
-          </div>
+          <div class="label">Seguros de Autos, Vida, Salud y Travel</div>
 
           <!-- Animated title -->
           <h1 class="hero-title" id="hero-heading">
-            <span class="line"><span>Protege lo que más</span></span>
-            <span class="line"><span>quieres, cuando</span></span>
-            <span class="line"><span class="accent">más lo necesitas.<i class="type-caret" aria-hidden="true"></i></span></span>
+            <span class="line"><span>Protegemos lo que más</span></span>
+            <span class="line"><span class="accent">te importa.<i class="type-caret" aria-hidden="true"></i></span></span>
           </h1>
 
           <!-- Subtitle -->
           <p class="hero-sub" id="hero-sub">
-            En JIREH comparamos entre las <strong>mejores aseguradoras del mercado</strong> para encontrar tu plan ideal. Asesoría transparente y cercana — antes, durante y después de contratar tu póliza.
+            En JIREH Asesores de Seguros te ofrecemos soluciones personalizadas para cuidar tu presente y asegurar tu futuro.
           </p>
 
-          <!-- CTAs -->
+          <!-- Coverage icon row -->
+          <div class="hero-cov-row" aria-label="Tipos de cobertura">
+            <div class="hero-cov"><div class="hero-cov-icon"><i class="fa-solid fa-car"></i></div><span>Seguros<br>de Autos</span></div>
+            <div class="hero-cov"><div class="hero-cov-icon"><i class="fa-solid fa-heart-pulse"></i></div><span>Seguros<br>de Vida</span></div>
+            <div class="hero-cov"><div class="hero-cov-icon"><i class="fa-solid fa-stethoscope"></i></div><span>Seguros<br>de Salud</span></div>
+            <div class="hero-cov"><div class="hero-cov-icon"><i class="fa-solid fa-plane"></i></div><span>Seguros<br>de Travel</span></div>
+          </div>
+
+          <!-- CTA -->
           <div class="hero-ctas" id="hero-ctas">
             <a href="https://wa.me/529322068037?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20seguro%20con%20JIREH." target="_blank" rel="noopener noreferrer" class="btn-gold">
-              <i class="fa-brands fa-whatsapp" style="font-size:15px;"></i>
-              Cotizar por WhatsApp
+              <i class="fa-solid fa-shield-halved" style="font-size:14px;"></i>
+              Quiero proteger lo que más importa
             </a>
-            <p class="hero-ctas-note">
-              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-              Comparamos opciones entre varias aseguradoras y te asesoramos para elegir la solución adecuada.
-            </p>
           </div>
 
         </div><!-- /.hero-content -->
-      </div>
 
-      <!-- Scroll cue -->
-      <div class="scroll-cue" aria-hidden="true">
-        <div class="scroll-mouse">
-          <div class="scroll-mouse-dot"></div>
+        <div class="hero-media" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1756142007128-f431ede241cc?q=80&w=1400&auto=format&fit=crop" alt="">
         </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         FRANJA DE CONFIANZA (banda oscura bajo el hero)
+    ══════════════════════════════════════════════════ -->
+    <section id="hero-trust" aria-label="Compromisos JIREH">
+      <div class="container hero-trust-grid">
+        <div class="hero-trust-item"><i class="fa-solid fa-user-shield"></i><span>Asesoría profesional y personalizada</span></div>
+        <div class="hero-trust-item"><i class="fa-solid fa-building-columns"></i><span>Coberturas con las mejores aseguradoras</span></div>
+        <div class="hero-trust-item"><i class="fa-solid fa-handshake-angle"></i><span>Acompañamiento en cada etapa de tu vida</span></div>
+        <div class="hero-trust-item"><i class="fa-solid fa-award"></i><span>Confianza, honestidad y compromiso</span></div>
       </div>
     </section>
 
@@ -171,6 +154,22 @@
     <div class="marquee" aria-hidden="true">
       <div class="marquee-inner" id="marquee"></div>
     </div>
+
+    <!-- ══════════════════════════════════════════════════
+         ASEGURADORAS (banda blanca de confianza)
+    ══════════════════════════════════════════════════ -->
+    <section id="aseguradoras" aria-labelledby="aseg-heading">
+      <div class="container">
+        <div class="aseguradoras-hdr">
+          <div class="label">Confianza respaldada</div>
+          <h2 class="section-title" id="aseg-heading">Respaldados por las mejores aseguradoras</h2>
+        </div>
+        <div class="aseguradoras-panel">
+          <img src="img/aseguradoras.jpg" alt="Logos de las aseguradoras con las que trabaja JIREH: Qualitas, HDI, ANA, AXA, Bupa, GBG, Seguros Afirme, Banorte Seguros, Sura, MAPFRE, Mutuus, Continental Assist, Seguros Argos, Best Doctors, AIG, Zurich, La Latino Seguros, BMI, Seguros El Potosí, General de Seguros, Chubb, Thona Seguros, Insignia Life, MetLife, BX+, GNP, Seguros Monterrey New York Life, Inbursa, Fianzas Atlas, Prevem, Aserta Afianzadora, Mapfre Fianzas, GMX, Plan Seguro, Tokio Marine Seguradora, Sofimex y Allianz, entre otras.">
+        </div>
+        <p class="aseguradoras-note">Y muchas más.</p>
+      </div>
+    </section>
 
     <!-- ══════════════════════════════════════════════════
          COBERTURAS (banda blanca)
