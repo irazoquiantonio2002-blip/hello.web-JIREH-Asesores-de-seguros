@@ -7,7 +7,7 @@
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ── WhatsApp config ─────────────────────────────────────── */
-  var WA_NUMBER = '529322068037';
+  var WA_NUMBER = '529321273550';
 
   /* ── Loader ───────────────────────────────────────────────── */
   function hideLoader() {

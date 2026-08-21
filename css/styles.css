@@ -401,7 +401,13 @@ section{ position:relative; padding:120px 0; }
   box-shadow:var(--card-shadow);
   padding:8px;
 }
+.aseguradoras-img-wrap{ position:relative; }
 .aseguradoras-panel img{ width:100%; height:auto; display:block; }
+/* Tapa el logo rojo ajeno a JIREH que trae la imagen original, en las 3 franjas */
+.aseg-cover{ position:absolute; pointer-events:none; }
+.aseg-cover.c1{ left:94.3%; top:5.2%; width:5.1%; height:4.6%; background:#f6f6f6; }
+.aseg-cover.c2{ left:94.3%; top:35.7%; width:5.1%; height:4.6%; background:#f1f1f1; }
+.aseg-cover.c3{ left:94.3%; top:67.1%; width:5.1%; height:4.6%; background:#f0f0f0; }
 .aseguradoras-note{ margin-top:18px; text-align:center; font-size:13.5px; color:var(--body-soft); }
 
 /* ══════════════════════════════════════════════════════════════
